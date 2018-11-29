@@ -17,5 +17,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: justinmillar/cv
-    tags: true
     all_branches: true
