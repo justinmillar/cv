@@ -8,13 +8,3 @@ script:
 - Rscript install_texlive.R
 - Rscript -e 'tinytex::pdflatex("cv.tex", bib_engine = "xelatex")'
 cache: packages
-deploy:
-  provider: releases
-  api_key:
-    secure: mnGESvT1/O3yAccmoKbofgtjm18eAvBL//9Vc/IpTCUebhIWuE6yW7hiwAXlUppta0rVsThlhZR4vRkFbxnldxlSwldu+koMr+wXK8tuwK6mzpZY0ieEXU7o/tGxE9ucWNyy8G6HpB1MK1BdW7CZ1/pAy+7FqVA0yL/0x3Oe1tJWCkLH5ierfF2YfmJ5k52eh6yDTeZGISvAxaL5lz7JOtmOTN/+FqkcFfBZIUfU0nhhYHhG2t8Dj54PyFjtrx9LIp3BhCkq/nk5V6DD6hIH07wdbWJTODvSVdffCgPYBTXDoS4As2qqrvJP7schb8PO3PKo0iHJ5VxYt0mkmvtrQzxmK72buUkFpV0+ZZnwfsEYm+Tr9vHA2sg7DbPtyXVO6nsvnrBMhTHDXR4Hhprl5tLh12wrDaRzl6oplhqzIZJhkzs3ngf2jpo4BPr45h4isPGJsmu+/Cvj3bqwuavuVUWi/fQADU5kBueJYHFWuIaYS4gCO+XgOT5AHwc3Cb0dVtCfOZk0kqsLlWKR+50Y4hjj7m1LXbI3DPq+8Es3veQKCLOz1NhEE6DxO+keNvsWjJQPq2MgDoTPqqlMtJmWYOCzCQNRUO9vzot6As/ypuQ6IFcX7Zf2UDxsU2Mj4qh9HTPscz8SrRiBjz7pVOmEHMyjAa7ourqNqpQu+1I3GRI=
- file:
-  - ./cv.pdf
-  skip_cleanup: true
-  on:
-    tags: true
-    branch: master
