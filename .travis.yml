@@ -6,5 +6,5 @@ warnings_are_errors: false
 install: echo "The install step is required but does nothing now."
 script:
 - Rscript install_texlive.R
-- Rscript -e 'tinytex::pdflatex("cv.tex", bib_engine = "lualatex")'
+- Rscript -e 'tinytex::pdflatex("cv.tex")'
 cache: packages
